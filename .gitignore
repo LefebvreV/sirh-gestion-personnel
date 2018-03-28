@@ -1,0 +1,7 @@
+.project
+.classpath
+*.class
+.settings
+/target/
+pom.properties
+MANIFEST.MF
