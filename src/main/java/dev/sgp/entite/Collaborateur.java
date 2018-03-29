@@ -18,6 +18,9 @@ public class Collaborateur {
 	private Boolean actif;
 	private String intitulePost;
 	private Departement departement;
+	private String banque;
+	private String bic;
+	private String iban;
 	
 	public Collaborateur(){
 		
@@ -38,6 +41,7 @@ public class Collaborateur {
 		this.intitulePost = intitulePost;
 		this.departement = departement;
 	}
+	
 	/**
 	 * @return the matricule
 	 */
@@ -204,5 +208,47 @@ public class Collaborateur {
 	 */
 	public void setDepartement(Departement departement) {
 		this.departement = departement;
+	}
+
+	/**
+	 * @return the banque
+	 */
+	public String getBanque() {
+		return banque;
+	}
+
+	/**
+	 * @param banque the banque to set
+	 */
+	public void setBanque(String banque) {
+		this.banque = banque;
+	}
+
+	/**
+	 * @return the bic
+	 */
+	public String getBic() {
+		return bic;
+	}
+
+	/**
+	 * @param bic the bic to set
+	 */
+	public void setBic(String bic) {
+		this.bic = bic;
+	}
+
+	/**
+	 * @return the iban
+	 */
+	public String getIban() {
+		return iban;
+	}
+
+	/**
+	 * @param iban the iban to set
+	 */
+	public void setIban(String iban) {
+		this.iban = iban;
 	}
 }

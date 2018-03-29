@@ -100,7 +100,7 @@
 	        <div class="col-lg-4 col-sm-12 col-md-6">
 	          <div class="card" style="width: 18rem;">
 	            <div class="card-header">
-	             	 <%= collab.getPrenom() %>  <%= collab.getNom() %> - <%= collab.getMatricule() %>
+	             	<%= collab.getPrenom() %>  <%= collab.getNom() %> - <%= collab.getMatricule() %>
 	            </div>
 	            <img class="card-img-top" src="<%=request.getContextPath() %>/images/placeholder.png" alt="Photo">
 	            <div class="card-body">
@@ -108,7 +108,7 @@
 	              <p class="card-text">Date de Naissance :  <%=collab.getDateNaissance() %></p>
 	              <p class="card-text">Numero de sécurité sociale :  <%=collab.getNumeroSociale() %></p>
 	              <p class="card-text">EmailPro :  <%=collab.getEmailPro() %></p>
-	              <a href="editer"><button type="submit" class="btn btn-primary floatRight">Editer</button></a>
+	              <a href="editer?matricule=<%=collab.getMatricule()%>"><button type="button" class="btn btn-primary floatRight" >Editer</button></a>
 	            </div>
 	          </div>
 	        </div>
